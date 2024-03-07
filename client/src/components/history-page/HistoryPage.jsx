@@ -27,7 +27,7 @@ const HistoryOrderItems=({product})=>{
             <img src={`http://localhost:0080/img/products/${product.photo}`}></img>
             <div className='info'>
                 <h2>{product.name}</h2>
-                <h3>{product.price} $</h3>
+                <h3>{product.price.toFixed(2)} $</h3>
                 <p>{product.unique_code}</p>
             </div>
         </div>
