@@ -1,5 +1,5 @@
 # "Medicine delivery app" project
-## Starting the server
+## Starting project
 
 1. Clone the repository:
     git clone [https://github.com/IvanKondratiev/medicine-app.git]
