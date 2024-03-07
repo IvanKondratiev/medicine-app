@@ -151,7 +151,7 @@ export default function Cart() {
         const productsInCart = JSON.parse(localStorage.getItem('cart_products'))||[];
         const fetchData=async()=>{
             try{
-                const response = await fetch('http://localhost:0080/makeorder',{
+                const response = await fetch('https://goforetor.pagekite.me/makeorder',{
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

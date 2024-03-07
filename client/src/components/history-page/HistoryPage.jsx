@@ -24,10 +24,10 @@ const HistoryOrder = ({ el }) => {
 const HistoryOrderItems=({product})=>{
     return(
         <div className='order__item'>
-            <img src={`http://localhost:0080/img/products/${product.photo}`}></img>
+            <img src={`https://goforetor.pagekite.me/img/products/${product.photo}`}></img>
             <div className='info'>
                 <h2>{product.name}</h2>
-                <h3>{product.price.toFixed(2)} $</h3>
+                <h3>{product.price} $</h3>
                 <p>{product.unique_code}</p>
             </div>
         </div>
@@ -52,7 +52,7 @@ const HistoryPage =()=>{
     const[orders, setOrders] = useState([]);
     const getOrders=async()=>{
         try{
-            const response = await fetch('http://localhost:0080/getorders',{
+            const response = await fetch('https://goforetor.pagekite.me/getorders',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

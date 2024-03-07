@@ -6,7 +6,7 @@ function ProductItem({ product, addToCart }) {
   return (
     <>
       <div className='product'>
-        <img src={`http://localhost:0080/img/products/${product.photo}`} alt={product.name} />
+        <img src={`https://goforetor.pagekite.me/img/products/${product.photo}`} alt={product.name} />
         <h1>{product.name}</h1>
         <p>{product.description}</p>
         <h3>{product.price} $</h3><span> Code: {product.unique_code}</span>
@@ -52,8 +52,8 @@ export default function Products() {
     const fetchProducts = async () => {
       try {
         const url = selectedShops.length
-          ? `http://localhost:0080/getproducts?shopIds=${selectedShops.join(',')}`
-          : 'http://localhost:0080/getproducts';
+          ? `https://goforetor.pagekite.me/getproducts?shopIds=${selectedShops.join(',')}`
+          : 'https://goforetor.pagekite.me/getproducts';
 
         const response = await fetch(url);
 
@@ -70,7 +70,7 @@ export default function Products() {
 
     const fetchShops = async () => {
       try {
-        const response = await fetch('http://localhost:0080/getshops');
+        const response = await fetch('https://goforetor.pagekite.me/getshops');
 
         if (!response.ok) {
           throw new Error('Network response was not ok.');
