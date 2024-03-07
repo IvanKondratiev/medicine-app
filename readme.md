@@ -1,6 +1,6 @@
 # "Medicine delivery app" project
 ## Starting project
-
+###  https://medicine-app-delivery.netlify.app/
 1. Clone the repository:
     git clone [https://github.com/IvanKondratiev/medicine-app.git]
 
